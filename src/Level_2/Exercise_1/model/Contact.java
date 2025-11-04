@@ -23,7 +23,7 @@ public class Contact {
     }
 
     public String toString(){
-        return "Contact: " + System.lineSeparator() +
+        return "\nContact: " + System.lineSeparator() +
                 "Phone Number = " + getPhoneNumber() + System.lineSeparator() +
                 "Address = " + getAddress() + System.lineSeparator();
     }

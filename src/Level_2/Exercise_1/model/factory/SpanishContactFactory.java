@@ -8,8 +8,8 @@ import Level_2.Exercise_1.model.products.SpanishPhoneNumber;
 public class SpanishContactFactory implements CountryContactFactory {
 
     @Override
-    public Address createAddress(String street, int block, int floor, int door, String municipality, String zip_code, String province, String country) {
-        return new SpanishAddress(street, block, floor, door, municipality, zip_code, province, country);
+    public Address createAddress(String... data) {
+        return new SpanishAddress(data);
     }
 
     @Override

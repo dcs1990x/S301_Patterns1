@@ -1,13 +1,13 @@
 package Level_3.Exercise_1.model.vehicles;
 
-import Level_3.Exercise_1.model.interfaces.Acceleratable;
-import Level_3.Exercise_1.model.interfaces.Brakeable;
-import Level_3.Exercise_1.model.interfaces.Startable;
+import Level_3.Exercise_1.model.interfaces.*;
 
-public class Car extends Vehicle implements Startable, Acceleratable, Brakeable {
+public class Car implements Startable, Acceleratable, Brakeable {
+    private String brand, model;
 
     public Car(String brand, String model){
-        super(brand, model);
+        this.brand = brand;
+        this.model = model;
     }
 
     @Override

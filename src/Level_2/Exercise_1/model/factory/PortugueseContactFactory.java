@@ -5,8 +5,8 @@ import Level_2.Exercise_1.model.products.*;
 public class PortugueseContactFactory implements CountryContactFactory {
 
     @Override
-    public Address createAddress(String street, int block, int floor, int door, String municipality, String zip_code, String province, String country) {
-        return new PortugueseAddress(street, block, floor, door, municipality, zip_code, province, country);
+    public Address createAddress(String... data) {
+        return new PortugueseAddress(data);
     }
 
     @Override

@@ -15,5 +15,4 @@ public class BrakeCommand implements Command {
     public void execute(){
         brakeable.brake();
     }
-
 }
